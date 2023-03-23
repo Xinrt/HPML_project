@@ -51,7 +51,17 @@
 
 ​		**我们可不可以比较速度，内存啥的？**
 
+5. 基于CLIP的微调新范式（cross-modal adaptation)
 
+   https://github.com/linzhiqiu/cross_modal_adaptation
+
+   https://arxiv.org/abs/2301.06267
+
+   https://linzhiqiu.github.io/papers/cross_modal/
+
+   仅用线性分类器即可超越CoOp，Tip-Adapter等多种算法在小样本图像识别训练集上的性能
+
+​		[量化研究跨模态微调（cross-modal adaptation）能不能取代单模态微调，成为未来预训练模型的性能衡量基准？]
 
 
 
