@@ -109,3 +109,9 @@
 
 ## optimize algorithm in cuda
 https://github.com/BBuf/how-to-optim-algorithm-in-cuda
+
+
+
+## overleaf
+
+https://www.overleaf.com/5277458364tsvsnmmpftms
