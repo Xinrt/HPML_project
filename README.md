@@ -61,6 +61,12 @@ pip install timm==0.6.12
 
 
 
+## use PyTorch 2.0
+
+https://mp.weixin.qq.com/s/BFnapl7TpPkpa7Dm9sC8BQ
+
+
+
 ## overleaf
 
 **Proposal**:
