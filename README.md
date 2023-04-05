@@ -37,7 +37,7 @@ pip install timm==0.6.12
 
 ## reference
 
-**Stitchable Neural Networks**
+### **Stitchable Neural Networks**
 
 <https://arxiv.org/abs/2302.06586>
 
@@ -52,6 +52,16 @@ pip install timm==0.6.12
 1. 当前的训练策略比较简单，每次iteration sample出来一个stitch，但是当stitches特别多的时候，可能导致某些stitch训练的不够充分，除非增加训练时间。所以训练策略上可以继续改进。
 2. anchor的performance会比之前下降一些，虽然不大。直觉上，在joint training过程中，anchor为了保证众多stitches的性能在自身weights上做了一些trade-off。目前补充材料里发现finetune更多epoch可以把这部分损失补回来。
 3. 不用nearest stitching可以明显扩大space，但此时大部分网络不在pareto frontier上，未来可以结合训练策略进行改进，或者在其他地方发现advantage。
+
+
+
+### ResNets
+
+**ResNet-18**: https://huggingface.co/microsoft/resnet-18
+
+**ResNet-34**: https://huggingface.co/microsoft/resnet-34
+
+
 
 
 
