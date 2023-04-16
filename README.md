@@ -35,6 +35,9 @@ pip install timm==0.6.12
 --resplit --split-bn -j 10 --dist-bn reduce
 ```
 
+GPUs avaliable on HPC:
+https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/best-practices#h.ud1g8fsehnmk
+
 ## reference
 
 ### **Stitchable Neural Networks**
