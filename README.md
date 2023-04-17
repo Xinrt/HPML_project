@@ -187,8 +187,7 @@ https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/best-practices#h.ud1
 ## Tasks
 
 - [x] run the train.py in stitching_resnet_swin (using resnet18, resnet50)
-- [ ] Replace resnet50 to resnet34
-- [ ] 
+- [ ] Replace resnet50 with resnet34
 
 
 
