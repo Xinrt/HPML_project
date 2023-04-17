@@ -131,6 +131,8 @@ exit
 
 ##### Training 
 
+###### Using command line
+
 1. First, launch Singularity with mouting scratch path
 
 ```
@@ -146,6 +148,8 @@ which python
 
 3. Then, run the following command, notice that currently 2 GPU could be used
 
+   **remenber to specify the output path, and creat the corresponding directory**
+
 ```
 cd /scratch/<Net-id>/SN-Net/stitching_resnet_swin
 
@@ -153,6 +157,7 @@ cd /scratch/<Net-id>/SN-Net/stitching_resnet_swin
 [path/to/imagenet] \
 -b 128 \
 --stitch_config configs/resnet18_resnet50.json \
+--output './output/train' \
 --sched cosine \
 --epochs 30 \
 --lr 0.05 \
@@ -161,6 +166,16 @@ cd /scratch/<Net-id>/SN-Net/stitching_resnet_swin
 --aa rand-m9-mstd0.5-inc1 \
 --resplit --split-bn -j 10 --dist-bn reduce
 ```
+
+
+
+###### Using sbatch
+
+put the `compute_run.sbatch` at the same location of `train.py`, in burst login mode
+
+the slurm output will display in burst compute mode at the same location of `train.py`
+
+
 
 
 
