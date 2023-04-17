@@ -182,6 +182,16 @@ the slurm output will display in burst compute mode at the same location of `tra
 GPUs avaliable on HPC:
 https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/best-practices#h.ud1g8fsehnmk
 
+
+
+## Tasks
+
+- [x] run the train.py in stitching_resnet_swin (using resnet18, resnet50)
+- [ ] Replace resnet50 to resnet34
+- [ ] 
+
+
+
 ## reference
 
 ### **Stitchable Neural Networks**
