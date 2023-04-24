@@ -238,3 +238,9 @@ https://mp.weixin.qq.com/s/BFnapl7TpPkpa7Dm9sC8BQ
 **Proposal**:
 
 <https://www.overleaf.com/5277458364tsvsnmmpftms>
+
+
+
+**Mid-point Project Checkpoint**:
+
+https://www.overleaf.com/9776311238zvztfdjmbwgd
