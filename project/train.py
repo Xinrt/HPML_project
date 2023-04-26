@@ -546,9 +546,10 @@ def main():
         print(f'FLOPs = {round(converted, 2)} G')
         anchor_models.append(model)
 
+    # stitch the models
     from timm.models.snnet import SNNet
     model = SNNet(anchor_models=anchor_models, cnn_to_vit=cnn_to_vit)
-    print(model)
+    print("stitchable model: ", model)
 
     if args.num_classes is None:
         assert hasattr(model, 'num_classes'), 'Model must have `num_classes` attr if not set on cmd line/config.'
@@ -579,7 +580,7 @@ def main():
     if args.channels_last:
         model.to(memory_format=torch.channels_last)
 
-
+    # transfer the stitchable model to initialize stitching layers
     initiailize_stitching_layer(args, model, data_config, num_aug_splits, device)
 
 
