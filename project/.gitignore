@@ -100,7 +100,6 @@ venv.bak/
 # PyCharm
 .idea
 
-output/
 
 # PyTorch weights
 *.tar
@@ -109,5 +108,3 @@ output/
 *.gz
 Untitled.ipynb
 Testing notebook.ipynb
-output/*
-logs/*

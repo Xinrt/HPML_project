@@ -182,8 +182,6 @@ https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/best-practices#h.ud1
 
 
 
-
-
 ## How to run the github code
 
 ```Shell
