@@ -1,0 +1,61 @@
+04/26/2023 15:22:07 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 1, total 2, device cuda:1.
+04/26/2023 15:22:07 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 0, total 2, device cuda:0.
+04/26/2023 15:22:08 - INFO - train -   Model resnet50 created, param count:37904976
+04/26/2023 15:22:18 - INFO - train -   Using native Torch AMP. Training in mixed precision.
+04/26/2023 15:22:18 - INFO - train -   Using native Torch DistributedDataParallel.
+04/26/2023 15:22:25 - INFO - train -   Scheduled epochs: 3. LR stepped per epoch.
+04/26/2023 15:22:31 - INFO - train -   Train: 0 [   0/105 (  0%)]  Loss: 8.293 (8.29)  Time: 5.881s,   43.53/s  (5.881s,   43.53/s)  LR: 5.500e-06  Data: 1.376 (1.376)
+04/26/2023 15:22:46 - INFO - train -   Train: 0 [  50/105 ( 48%)]  Loss: 8.010 (8.15)  Time: 0.297s,  862.23/s  (0.427s,  599.66/s)  LR: 5.500e-06  Data: 0.011 (0.038)
+04/26/2023 15:23:01 - INFO - train -   Train: 0 [ 100/105 ( 96%)]  Loss: 8.066 (8.12)  Time: 0.362s,  707.33/s  (0.362s,  707.85/s)  LR: 5.500e-06  Data: 0.011 (0.025)
+04/26/2023 15:23:02 - INFO - train -   Train: 0 [ 104/105 (100%)]  Loss: 7.867 (8.06)  Time: 0.251s, 1021.27/s  (0.358s,  715.55/s)  LR: 5.500e-06  Data: 0.000 (0.024)
+04/26/2023 15:23:02 - INFO - train -   Distributing BatchNorm running means and vars
+04/26/2023 15:23:05 - INFO - train -   Train: 1 [   0/105 (  0%)]  Loss: 8.310 (8.31)  Time: 0.924s,  277.08/s  (0.924s,  277.08/s)  LR: 5.504e-03  Data: 0.642 (0.642)
+04/26/2023 15:23:20 - INFO - train -   Train: 1 [  50/105 ( 48%)]  Loss: 5.558 (6.93)  Time: 0.293s,  872.98/s  (0.309s,  829.56/s)  LR: 5.504e-03  Data: 0.014 (0.024)
+04/26/2023 15:23:35 - INFO - train -   Train: 1 [ 100/105 ( 96%)]  Loss: 4.608 (6.16)  Time: 0.293s,  874.81/s  (0.303s,  844.71/s)  LR: 5.504e-03  Data: 0.010 (0.018)
+04/26/2023 15:23:36 - INFO - train -   Train: 1 [ 104/105 (100%)]  Loss: 4.806 (5.82)  Time: 0.288s,  890.34/s  (0.302s,  846.55/s)  LR: 5.504e-03  Data: 0.000 (0.017)
+04/26/2023 15:23:36 - INFO - train -   Distributing BatchNorm running means and vars
+04/26/2023 15:23:39 - INFO - train -   Train: 2 [   0/105 (  0%)]  Loss: 4.636 (4.64)  Time: 0.978s,  261.64/s  (0.978s,  261.64/s)  LR: 1.100e-02  Data: 0.687 (0.687)
+04/26/2023 15:23:54 - INFO - train -   Train: 2 [  50/105 ( 48%)]  Loss: 4.419 (4.53)  Time: 0.355s,  721.26/s  (0.314s,  815.24/s)  LR: 1.100e-02  Data: 0.011 (0.025)
+04/26/2023 15:24:08 - INFO - train -   Train: 2 [ 100/105 ( 96%)]  Loss: 4.360 (4.47)  Time: 0.353s,  725.91/s  (0.301s,  849.26/s)  LR: 1.100e-02  Data: 0.011 (0.018)
+04/26/2023 15:24:09 - INFO - train -   Train: 2 [ 104/105 (100%)]  Loss: 4.266 (4.42)  Time: 0.284s,  901.94/s  (0.302s,  848.68/s)  LR: 1.100e-02  Data: 0.000 (0.018)
+04/26/2023 15:24:09 - INFO - train -   Distributing BatchNorm running means and vars
+04/26/2023 15:24:09 - INFO - train -   ------------- Evaluting stitch config 0/10 -------------
+04/26/2023 15:24:12 - INFO - train -   ------------- Evaluting stitch config 0/10 -------------
+04/26/2023 15:24:13 - INFO - train -   Test: [   0/39]  Time: 1.039 (1.039)  Loss:  1.8145 (1.8145)  Acc@1: 57.0312 (57.0312)  Acc@5: 89.4531 (89.4531)
+04/26/2023 15:24:15 - INFO - train -   Test: [  39/39]  Time: 0.062 (0.068)  Loss:  3.0879 (1.9660)  Acc@1: 31.2500 (54.0400)  Acc@5: 68.7500 (89.4000)
+04/26/2023 15:24:15 - INFO - train -   ------------- Evaluting stitch config 1/10 -------------
+04/26/2023 15:24:15 - INFO - train -   ------------- Evaluting stitch config 1/10 -------------
+04/26/2023 15:24:16 - INFO - train -   Test: [   0/39]  Time: 0.603 (0.603)  Loss:  2.9609 (2.9609)  Acc@1: 46.0938 (46.0938)  Acc@5: 94.9219 (94.9219)
+04/26/2023 15:24:19 - INFO - train -   ------------- Evaluting stitch config 2/10 -------------
+04/26/2023 15:24:19 - INFO - train -   Test: [  39/39]  Time: 0.250 (0.084)  Loss:  3.0410 (3.1407)  Acc@1: 43.7500 (48.9400)  Acc@5: 100.0000 (94.0000)
+04/26/2023 15:24:19 - INFO - train -   ------------- Evaluting stitch config 2/10 -------------
+04/26/2023 15:24:20 - INFO - train -   Test: [   0/39]  Time: 0.677 (0.677)  Loss:  1.0674 (1.0674)  Acc@1: 81.2500 (81.2500)  Acc@5: 100.0000 (100.0000)
+04/26/2023 15:24:22 - INFO - train -   Test: [  39/39]  Time: 0.013 (0.069)  Loss:  0.8223 (1.0340)  Acc@1: 100.0000 (85.4100)  Acc@5: 100.0000 (99.5100)
+04/26/2023 15:24:22 - INFO - train -   ------------- Evaluting stitch config 3/10 -------------
+04/26/2023 15:24:22 - INFO - train -   ------------- Evaluting stitch config 3/10 -------------
+04/26/2023 15:24:22 - INFO - train -   Test: [   0/39]  Time: 0.643 (0.643)  Loss:  0.7695 (0.7695)  Acc@1: 92.1875 (92.1875)  Acc@5: 100.0000 (100.0000)
+04/26/2023 15:24:25 - INFO - train -   ------------- Evaluting stitch config 4/10 -------------
+04/26/2023 15:24:25 - INFO - train -   Test: [  39/39]  Time: 0.013 (0.068)  Loss:  0.7871 (0.7665)  Acc@1: 100.0000 (93.1600)  Acc@5: 100.0000 (99.7200)
+04/26/2023 15:24:25 - INFO - train -   ------------- Evaluting stitch config 4/10 -------------
+04/26/2023 15:24:25 - INFO - train -   Test: [   0/39]  Time: 0.619 (0.619)  Loss:  1.6309 (1.6309)  Acc@1: 78.5156 (78.5156)  Acc@5: 100.0000 (100.0000)
+04/26/2023 15:24:27 - INFO - train -   Test: [  39/39]  Time: 0.012 (0.068)  Loss:  1.4873 (1.5547)  Acc@1: 93.7500 (80.1600)  Acc@5: 100.0000 (99.6200)
+04/26/2023 15:24:27 - INFO - train -   ------------- Evaluting stitch config 5/10 -------------
+04/26/2023 15:24:27 - INFO - train -   ------------- Evaluting stitch config 5/10 -------------
+04/26/2023 15:24:28 - INFO - train -   Test: [   0/39]  Time: 0.613 (0.613)  Loss:  2.1250 (2.1250)  Acc@1: 71.8750 (71.8750)  Acc@5: 99.6094 (99.6094)
+04/26/2023 15:24:30 - INFO - train -   ------------- Evaluting stitch config 6/10 -------------
+04/26/2023 15:24:30 - INFO - train -   Test: [  39/39]  Time: 0.010 (0.066)  Loss:  2.2520 (2.0457)  Acc@1: 68.7500 (73.3900)  Acc@5: 100.0000 (99.4300)
+04/26/2023 15:24:30 - INFO - train -   ------------- Evaluting stitch config 6/10 -------------
+04/26/2023 15:24:31 - INFO - train -   Test: [   0/39]  Time: 0.611 (0.611)  Loss:  2.3672 (2.3672)  Acc@1: 66.4062 (66.4062)  Acc@5: 99.2188 (99.2188)
+04/26/2023 15:24:33 - INFO - train -   ------------- Evaluting stitch config 7/10 -------------
+04/26/2023 15:24:33 - INFO - train -   Test: [  39/39]  Time: 0.009 (0.064)  Loss:  2.3242 (2.3892)  Acc@1: 62.5000 (64.5700)  Acc@5: 100.0000 (98.7500)
+04/26/2023 15:24:33 - INFO - train -   ------------- Evaluting stitch config 7/10 -------------
+04/26/2023 15:24:34 - INFO - train -   Test: [   0/39]  Time: 0.607 (0.607)  Loss:  1.9199 (1.9199)  Acc@1: 78.9062 (78.9062)  Acc@5: 98.8281 (98.8281)
+04/26/2023 15:24:36 - INFO - train -   ------------- Evaluting stitch config 8/10 -------------
+04/26/2023 15:24:36 - INFO - train -   Test: [  39/39]  Time: 0.009 (0.066)  Loss:  2.0625 (1.9232)  Acc@1: 75.0000 (76.8800)  Acc@5: 100.0000 (98.6000)
+04/26/2023 15:24:36 - INFO - train -   ------------- Evaluting stitch config 8/10 -------------
+04/26/2023 15:24:36 - INFO - train -   Test: [   0/39]  Time: 0.572 (0.572)  Loss:  2.0723 (2.0723)  Acc@1: 78.9062 (78.9062)  Acc@5: 99.2188 (99.2188)
+04/26/2023 15:24:38 - INFO - train -   Test: [  39/39]  Time: 0.009 (0.062)  Loss:  1.9961 (2.0783)  Acc@1: 81.2500 (79.4900)  Acc@5: 100.0000 (98.9500)
+04/26/2023 15:24:38 - INFO - train -   ------------- Evaluting stitch config 9/10 -------------
+04/26/2023 15:24:38 - INFO - train -   ------------- Evaluting stitch config 9/10 -------------
+04/26/2023 15:24:39 - INFO - train -   Test: [   0/39]  Time: 0.626 (0.626)  Loss:  2.1816 (2.1816)  Acc@1: 92.5781 (92.5781)  Acc@5: 100.0000 (100.0000)
+04/26/2023 15:24:41 - INFO - train -   Test: [  39/39]  Time: 0.008 (0.062)  Loss:  2.0781 (2.1971)  Acc@1: 93.7500 (90.2100)  Acc@5: 100.0000 (99.5500)
