@@ -1,0 +1,10 @@
+implement the stitching:
+/project/timm/models/snnet.py
+
+# stitch the models
+from timm.models.snnet import SNNet
+model = SNNet(anchor_models=anchor_models, cnn_to_vit=cnn_to_vit)
+print("stitchable model: ", model)
+
+# transfer the stitchable model to initialize stitching layers
+initiailize_stitching_layer(args, model, data_config, num_aug_splits, device)
