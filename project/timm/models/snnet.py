@@ -5,6 +5,20 @@ from collections import defaultdict
 
 
 def unpaired_stitching(front_depth=12, end_depth=24):
+    """ stitch two anchors (different depths)
+
+    Args:
+        front_depth (int, optional): depth of the first anchor. Defaults to 12.
+        end_depth (int, optional): depth of the second anchor. Defaults to 24.
+
+    Returns:
+        stitch_cfgs: (idx, i), idx -> the index in the first anchor, 
+                               i -> the index in the second anchor
+                     record how to stitch two anchors
+        end_mapping_ids: index in the second anchor
+        num_stitches: The depth of the stitched NN after stitching = front_depth
+    """
+
     num_stitches = front_depth
 
     block_ids = torch.tensor(list(range(front_depth)))
@@ -26,6 +40,21 @@ def unpaired_stitching(front_depth=12, end_depth=24):
 
 
 def paired_stitching(depth=12, kernel_size=2, stride=1):
+    """stitch two anchors (same depth)
+
+    Args:
+        depth (int, optional): depth of the anchor (layers in a NN). Defaults to 12.
+        kernel_size (int, optional): The size of the splicing block -> Defaults to 2.
+                                    how many layers are taken from the NN for splicing at a time. 
+        stride (int, optional): step length of the splicing block -> Defaults to 1.
+                                the span between the splicing block removed from the NN each time and the previous splicing block. 
+
+    Returns:
+        stitch_cfgs: (j, k), j -> the index in the first anchor, 
+                            k -> the index in the second anchor
+        stitching_layers_mappings: the splicing ID of each layer in the NN stitching_layers_mappings[i] = index of the ith layer.
+        num_stitches: The depth of the stitched NN after stitching
+    """
     blk_id = list(range(depth))
     i = 0
     stitch_cfgs = []
@@ -57,6 +86,17 @@ def paired_stitching(depth=12, kernel_size=2, stride=1):
 
 
 def get_stitch_configs(depths, stage_id):
+    """gets the stitching configuration of the NN
+
+    Args:
+        depths (list): A list of the depths of multiple NNs that are going to be stitched
+                        in order: smallest to largest 
+        stage_id (int): phase index of a NN (phase index can be used to identify different parts of the NN)
+
+    Returns:
+        total_configs: multiple dictionaries 
+        total_stitches: a list
+    """
     depths = sorted(depths)
 
     d = depths[0]
@@ -84,6 +124,8 @@ def get_stitch_configs(depths, stage_id):
 
 
 def rearrange_activations(activations):
+    """uniform the shapes of activations to suit the needs of NN stitching
+    """
     is_convolution = len(activations.shape) == 4
     if is_convolution:
         activations = np.transpose(activations, axes=[0, 2, 3, 1])
@@ -102,6 +144,8 @@ def ps_inv(x1, x2):
     '''Least-squares solver given feature maps from two anchors.
 
     Source: https://github.com/renyi-ai/drfrankenstein/blob/main/src/comparators/compare_functions/ps_inv.py
+
+    Calculate the mapping relationship between the two anchors
     '''
     x1 = rearrange_activations(x1)
     x2 = rearrange_activations(x2)
