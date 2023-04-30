@@ -111,8 +111,8 @@ group.add_argument('--class-map', default='', type=str, metavar='FILENAME',
 
 # Model parameters
 group = parser.add_argument_group('Model parameters')
-group.add_argument('--model', default='resnet34', type=str, metavar='MODEL',
-                    help='Name of model to train (default: "resnet34"')
+group.add_argument('--model', default='resnet18', type=str, metavar='MODEL',
+                    help='Name of model to train (default: "resnet18"')
 group.add_argument('--pretrained', action='store_true', default=False,
                     help='Start with pretrained version of specified network (if avail)')
 group.add_argument('--initial-checkpoint', default='', type=str, metavar='PATH',
@@ -358,7 +358,7 @@ group.add_argument('--teacher-path', default='', type=str,
 group.add_argument('--eval', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
 
-group.add_argument('--stitch_config', default='configs/resnet18_swin_ti.json', type=str,
+group.add_argument('--stitch_config', default='configs/resnet34_swin_ti.json', type=str,
                     help='Path to pretrained teacher weights')
 
 
