@@ -1,7 +1,24 @@
-
 # HPML_project
 
-## Stitch ResNet-18 to ResNet-34
+## description of the project
+
+
+
+
+
+
+
+
+
+
+
+## description of the repository and code structure
+
+
+
+
+
+## Environment setup on NYU HPC 
 
 ### Training using Singularity - on burst compute
 
@@ -182,7 +199,7 @@ https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/best-practices#h.ud1
 
 
 
-## How to run the github code
+## Example commands to execute the code 
 
 ```Shell
 cd /scratch/<Net-id>/
@@ -216,63 +233,18 @@ cd /HPML_project/project
 
 
 
-## Tasks
+## Results (including charts/tables) and observations 
 
-- [x] run the train.py in stitching_resnet_swin (using resnet18, resnet50)
-- [ ] Replace resnet50 with resnet34
+
+
+
 
 
 
 ## reference
 
-### **Stitchable Neural Networks**
+paper link: <https://arxiv.org/abs/2302.06586>
 
-<https://arxiv.org/abs/2302.06586>
-
-<https://github.com/ziplab/SN-Net>
-
-利用现有的model family直接做少量epoch finetune就可以得到大量插值般存在的子网络，运行时任意切换网络结构满足不同resource constraint -> 用少量计算资源满足目标场景
-
-[把SN-Net extend到其他任务上：such as natural language processing, dense prediction and transfer learning]
-
-更多拓展空间：
-
-1. 当前的训练策略比较简单，每次iteration sample出来一个stitch，但是当stitches特别多的时候，可能导致某些stitch训练的不够充分，除非增加训练时间。所以训练策略上可以继续改进。
-2. anchor的performance会比之前下降一些，虽然不大。直觉上，在joint training过程中，anchor为了保证众多stitches的性能在自身weights上做了一些trade-off。目前补充材料里发现finetune更多epoch可以把这部分损失补回来。
-3. 不用nearest stitching可以明显扩大space，但此时大部分网络不在pareto frontier上，未来可以结合训练策略进行改进，或者在其他地方发现advantage。
+github link: <https://github.com/ziplab/SN-Net>
 
 
-
-### ResNets
-
-**ResNet-18**: https://huggingface.co/microsoft/resnet-18
-
-**ResNet-34**: https://huggingface.co/microsoft/resnet-34
-
-
-
-
-
-## optimize algorithm in cuda
-
-<https://github.com/BBuf/how-to-optim-algorithm-in-cuda>
-
-
-
-## use PyTorch 2.0
-
-https://mp.weixin.qq.com/s/BFnapl7TpPkpa7Dm9sC8BQ
-
-
-
-## overleaf
-
-**Proposal**:
-
-<https://www.overleaf.com/5277458364tsvsnmmpftms>
-
-
-
-**Mid-point Project Checkpoint**:
-
-https://www.overleaf.com/9776311238zvztfdjmbwgd
