@@ -111,7 +111,7 @@ group.add_argument('--class-map', default='', type=str, metavar='FILENAME',
 
 # Model parameters
 group = parser.add_argument_group('Model parameters')
-group.add_argument('--model', default='resnet18', type=str, metavar='MODEL',
+group.add_argument('--model', default='resnet34', type=str, metavar='MODEL',
                     help='Name of model to train (default: "resnet18"')
 group.add_argument('--pretrained', action='store_true', default=False,
                     help='Start with pretrained version of specified network (if avail)')
