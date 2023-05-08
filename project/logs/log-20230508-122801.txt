@@ -1,0 +1,9 @@
+05/08/2023 12:28:01 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 0, total 4, device cuda:0.
+05/08/2023 12:28:01 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 2, total 4, device cuda:2.
+05/08/2023 12:28:01 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 1, total 4, device cuda:1.
+05/08/2023 12:28:01 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 3, total 4, device cuda:3.
+05/08/2023 12:28:05 - INFO - train -   Model resnet18 created, param count:48868688
+05/08/2023 12:28:16 - INFO - train -   Using native Torch AMP. Training in mixed precision.
+05/08/2023 12:28:16 - INFO - train -   Using native Torch DistributedDataParallel.
+05/08/2023 12:28:20 - INFO - train -   Scheduled epochs: 30. LR stepped per epoch.
+05/08/2023 12:28:27 - INFO - train -   Train: 0 [   0/52 (  0%)]  Loss: 8.250 (8.25)  Time: 6.960s,   73.57/s  (6.960s,   73.57/s)  LR: 5.500e-06  Data: 1.743 (1.743)
