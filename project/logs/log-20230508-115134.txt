@@ -1,0 +1,5 @@
+05/08/2023 11:51:34 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 3, total 4, device cuda:3.
+05/08/2023 11:51:34 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 1, total 4, device cuda:1.
+05/08/2023 11:51:34 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 2, total 4, device cuda:2.
+05/08/2023 11:51:34 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 0, total 4, device cuda:0.
+05/08/2023 11:51:36 - INFO - train -   Model resnet34 created, param count:33651792
