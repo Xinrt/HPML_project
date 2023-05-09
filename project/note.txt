@@ -13,32 +13,3 @@ initiailize_stitching_layer(args, model, data_config, num_aug_splits, device)
 
 
 
-# stitching ResNets
-18 - 34: success
-./distributed_train.sh 4 \
-/scratch/xt2191/tiny-imagenet-200 \
--b 128 \
---stitch_config configs/resnet18_resnet34.json \
---output './output/train' \
---sched cosine \
---epochs 30 \
---lr 0.05 \
---amp --remode pixel \
---reprob 0.6 \
---aa rand-m9-mstd0.5-inc1 \
---resplit --split-bn -j 10 --dist-bn reduce
-
-18 - 50: success
-./distributed_train.sh 4 \
-/scratch/xt2191/tiny-imagenet-200 \
--b 128 \
---stitch_config configs/resnet18_resnet50.json \
---output './output/train' \
---sched cosine \
---epochs 30 \
---lr 0.05 \
---amp --remode pixel \
---reprob 0.6 \
---aa rand-m9-mstd0.5-inc1 \
---resplit --split-bn -j 10 --dist-bn reduce
-
