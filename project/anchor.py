@@ -19,11 +19,11 @@ resnet101_url = 'https://github.com/rwightman/pytorch-image-models/releases/down
 # model = create_model('resnet34', pretrained=False)
 # model.load_state_dict(torch.hub.load_state_dict_from_url(resnet34_url))
 
-model = create_model('resnet50', pretrained=False)
-model.load_state_dict(torch.hub.load_state_dict_from_url(resnet50_url))
+# model = create_model('resnet50', pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(resnet50_url))
 
-# model = create_model('resnet101', pretrained=False)
-# model.load_state_dict(torch.hub.load_state_dict_from_url(resnet101_url))
+model = create_model('resnet101', pretrained=False)
+model.load_state_dict(torch.hub.load_state_dict_from_url(resnet101_url))
 
 
 

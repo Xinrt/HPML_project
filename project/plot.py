@@ -75,11 +75,11 @@ plt.show()
 
 acc_18_flops=1830000000
 acc_18=70
-acc_34_flops=
-acc_34=
-acc_50_flops=
-acc_50=
-acc_101_flops=
+acc_34_flops=3680000000
+acc_34=83.99
+acc_50_flops=4140000000
+acc_50=88.26
+acc_101_flops=7880000000
 acc_101=
 
 
