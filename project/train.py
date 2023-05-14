@@ -542,6 +542,7 @@ def main():
         flops = FlopCountAnalysis(model, torch.randn(1, 3, 224, 224))
         converted = flops.total() / 1e9
         n_parameters = sum(p.numel() for p in model.parameters())
+        print(f'parameters: {model.parameters()}')
         print(f'Number of Params: {round(n_parameters / 1e6, 2)} M')
         print(f'FLOPs = {round(converted, 2)} G')
         anchor_models.append(model)

@@ -204,7 +204,7 @@ https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/best-practices#h.ud1
 ```Shell
 cd /scratch/<Net-id>/
 ssh burst
-srun --cpus-per-task=8 --time=4:00:00 --mem=20GB --account=ece_gy_9143-2023sp --partition=n1s16-v100-2 --gres=gpu:2 --pty /bin/bash
+srun --cpus-per-task=8 --time=4:00:00 --mem=20GB --account=ece_gy_9143-2023sp --partition=n1c24m128-v100-4 --gres=gpu:4 --pty /bin/bash
 
 cd /scratch/<Net-id>/snnet_env_burst
 singularity shell -B /scratch/<Net-id> --nv --overlay /scratch/<Net-id>/snnet_env_burst/overlay-15GB-500K.ext3:ro /share/apps/images/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif
@@ -215,7 +215,7 @@ cd /scratch/<Net-id>
 git clone https://github.com/Xinrt/HPML_project.git 
 cd /HPML_project/project
 
-./distributed_train.sh 2 \
+./distributed_train.sh 4 \
 [path/to/imagenet] \
 -b 128 \
 --stitch_config configs/resnet18_resnet50.json \
@@ -246,5 +246,4 @@ cd /HPML_project/project
 paper link: <https://arxiv.org/abs/2302.06586>
 
 github link: <https://github.com/ziplab/SN-Net>
-
 
