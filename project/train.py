@@ -908,6 +908,14 @@ def main():
                 mixup_fn=mixup_fn,
             )
 
+            train_loss = train_metrics['loss']  # obtain loss function values
+            threshold = 2.5
+
+            if train_loss <= threshold:
+                print(f"Loss ({train_loss}) exceeded the threshold ({threshold}). Early stopping...")
+                break
+
+
             if args.distributed and args.dist_bn in ('broadcast', 'reduce'):
                 if utils.is_primary(args):
                     _logger.info("Distributing BatchNorm running means and vars")
