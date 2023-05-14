@@ -1,13 +1,13 @@
-parameters: <generator object Module.parameters at 0x14d5c74df840>
+parameters: <generator object Module.parameters at 0x14ef25240660>
 Number of Params: 11.69 M
 FLOPs = 1.83 G
-parameters: <generator object Module.parameters at 0x14eddf2bc200>
+parameters: <generator object Module.parameters at 0x14e7912578b0>
 Number of Params: 11.69 M
 FLOPs = 1.83 G
-parameters: <generator object Module.parameters at 0x14d5c74df840>
+parameters: <generator object Module.parameters at 0x14ef25240510>
 Number of Params: 21.8 M
 FLOPs = 3.68 G
-parameters: <generator object Module.parameters at 0x14eddf223840>
+parameters: <generator object Module.parameters at 0x14e7912f07b0>
 Number of Params: 21.8 M
 FLOPs = 3.68 G
 stitchable model:  stitchable model:  SNNet(
@@ -654,8 +654,8 @@ SNNet(
     )
   )
 )
-Initialized Stitching Model 0 to Model 1, stage 1, Layer 0
-Initialized Stitching Model 0 to Model 1, stage 1, Layer 0
+Initialized Stitching Model 0 to Model 1, stage 1, Layer 0Initialized Stitching Model 0 to Model 1, stage 1, Layer 0
+
 Initialized Stitching Model 0 to Model 1, stage 1, Layer 1
 Initialized Stitching Model 0 to Model 1, stage 1, Layer 1
 Initialized Stitching Model 0 to Model 1, stage 2, Layer 0
@@ -664,3 +664,5 @@ Initialized Stitching Model 0 to Model 1, stage 2, Layer 1
 Initialized Stitching Model 0 to Model 1, stage 2, Layer 1
 Creating teacher model
 Creating teacher model
+Loss (2.774538278579712) exceeded the threshold (2.8). Early stopping...
+Loss (2.774538278579712) exceeded the threshold (2.8). Early stopping...
