@@ -2,17 +2,43 @@
 
 ## description of the project
 
+This research project focuses on the integration of various Residual Networks (ResNets) to create multiple Stitched-Residual Networks (SN-Nets). The objective is to enhance the accuracy of the model while minimizing the associated computational overhead. By stitching together different ResNets, SN-Nets offer increased adaptability and customization. Moreover, SN-Nets exhibit greater resilience against noise and other disturbances compared to conventional Convolutional Neural Networks (CNNs).
 
 
 
+The process of stitching ResNets involves combining multiple Residual Networks to create a single SN-Net. This can be achieved by connecting the residual blocks of different ResNets sequentially. The resulting SN-Net architecture exhibits increased depth and complexity, enabling enhanced representation learning capabilities. By carefully selecting and combining ResNets, SN-Nets offer improved model accuracy without a significant increase in computational cost. One of the key advantages of SN-Nets is their flexibility and customization potential. As opposed to relying on a single ResNet architecture, multiple ResNets can be stitched together to create an SN-Net that caters to specific requirements. This allows researchers and practitioners to tailor the model architecture according to the characteristics of the dataset or the nature of the task. The flexibility of SN-Nets opens up new possibilities for optimizing model performance. SN-Nets demonstrate enhanced robustness to noise and other disturbances compared to traditional CNNs. By combining different ResNets, which possess diverse representations and feature extraction abilities, SN-Nets can capture more robust features that are less affected by noise. This property makes SN-Nets particularly suitable for real-world applications where noise and disturbances are prevalent, such as in medical imaging or autonomous driving.
 
 
 
-
+To validate the efficacy of SN-Nets, extensive experimentation is conducted on benchmark datasets. The performance of SN-Nets is compared with that of individual ResNets. Experimental results demonstrate that SN-Nets achieve higher accuracy while maintaining computational efficiency. 
 
 
 
 ## description of the repository and code structure
+
+**train.py:**
+
+Trains the SN-Nets after stitching.
+
+**snnet.py:** 
+
+Stitches anchor networks.
+
+**anchor.py:**
+
+Tests the accuracy of anchor ResNets, get their accuracy.
+
+**logs directory:**
+
+Contains the training process.
+
+**output/train directory:**
+
+contains the parameters and results of SN-Nets.
+
+**SN-Nets directory:**
+
+Contains structures of stitched SN-Nets.
 
 
 
@@ -235,7 +261,23 @@ cd /HPML_project/project
 
 ## Results (including charts/tables) and observations 
 
+### Different FLOPs of ResNets and SN-Nets
 
+![](./images/FLOPs.png)
+
+
+
+### Time varying with FLOPs
+
+![](./images/FLOPs-time.png)
+
+
+
+### Top1 accuracy of ResNets and SN-Nets from ResNets
+
+
+
+![](./images/anchor.png)
 
 
 
