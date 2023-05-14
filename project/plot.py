@@ -45,7 +45,6 @@ plt.legend()
 
 # 显示图像
 plt.show()
-
 plt.close()
 # 绘制散点图
 plt.scatter(acc_18_34_flops,  time_18_34, label='stitched 18_34', alpha=0.6)
@@ -65,7 +64,7 @@ plt.plot(*zip(*sorted(zip(acc_50_101_flops, time_50_101))), color='brown')
 
 # 设置标签
 plt.xlabel('FLOPs')
-plt.ylabel('Inference Time')
+plt.ylabel('Inference Time (s)')
 plt.title('FLOPs vs Time')
 plt.legend()
 
@@ -83,7 +82,14 @@ plt.show()
 # acc_101=92.73
 
 
-plt.scatter([1830000000, 3680000000, 4140000000, 7880000000], [70, 83.99, 88.26, 92.73], color=['red', 'green', 'purple', 'orange'], alpha=0.6)
+
+flops = [1830000000, 3680000000, 4140000000, 7880000000]
+accuracy = [70, 83.99, 88.26, 92.73]
+colors = ['red', 'green', 'purple', 'orange']
+labels = ['ResNet18', 'ResNet34', 'ResNet50', 'ResNet101']
+
+# 绘制散点
+plt.scatter(flops, accuracy, color=colors, alpha=0.6)
 
 # 将所有数据点连接成一条线
 all_flops = acc_18_34_flops + acc_34_50_flops + acc_50_101_flops
@@ -92,12 +98,18 @@ all_accuracy = acc_18_34 + acc_34_50 + acc_50_101
 sorted_points = sorted(zip(all_flops, all_accuracy))
 
 # 连接点
-plt.plot(*zip(*sorted_points), color='blue')
+plt.plot(*zip(*sorted_points), color='blue', label='SN-Nets')
 
 # 设置标签
 plt.xlabel('FLOPs')
-plt.ylabel('Accuracy')
-plt.title('FLOPs vs Accuracy')
+plt.ylabel('Top 1 Accuracy (%)')
+plt.title('FLOPs vs Top 1 Accuracy')
+
+# 添加标签
+for i, label in enumerate(labels):
+    plt.annotate(label, (flops[i], accuracy[i]), textcoords="offset points", xytext=(0,10), ha='center')
 
 # 显示图像
+plt.legend()
 plt.show()
+
