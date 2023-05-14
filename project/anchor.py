@@ -2,10 +2,9 @@ import torch
 from torchvision import transforms, datasets
 from torchvision.models import resnet18, resnet34, resnet50, resnet101
 
-# 数据集路径
+# datapath
 data_dir = '/scratch/xt2191/tiny-imagenet-200'
 
-# 数据预处理
 data_transforms = transforms.Compose([
     transforms.Resize(256),
     transforms.CenterCrop(224),
@@ -13,11 +12,11 @@ data_transforms = transforms.Compose([
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
-# 加载测试集
+# load datasets
 test_dataset = datasets.ImageFolder(root=data_dir + '/val', transform=data_transforms)
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
 
-# 加载ResNet-18模型
+# load model
 model = resnet18(pretrained=False)
 model.load_state_dict(torch.hub.load_state_dict_from_url(
     'https://download.pytorch.org/models/resnet18-5c106cde.pth'))
@@ -36,11 +35,11 @@ model.load_state_dict(torch.hub.load_state_dict_from_url(
 
 model.eval()
 
-# GPU设备（如果可用）
+# GPU
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-# 测试模型准确度
+# test
 correct = 0
 total = 0
 
@@ -56,4 +55,4 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
 
 accuracy = 100 * correct / total
-print("准确度：{:.2f}%".format(accuracy))
+print("accuracy：{:.2f}".format(accuracy))
