@@ -545,6 +545,11 @@ def main():
         print(f'parameters: {model.parameters()}')
         print(f'Number of Params: {round(n_parameters / 1e6, 2)} M')
         print(f'FLOPs = {round(converted, 2)} G')
+
+        print("evaluate anchor models")
+        model.eval()
+
+
         anchor_models.append(model)
 
     # stitch the models
@@ -1189,4 +1194,6 @@ def validate(
 
 if __name__ == '__main__':
     main()
+
+    
 
