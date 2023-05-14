@@ -7,11 +7,27 @@ from timm import create_model
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+resnet18_url = 'https://download.pytorch.org/models/resnet18-5c106cde.pth'
 resnet34_url = 'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34-43635321.pth'
+resnet50_url = 'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet50_a1_0-14fe96d1.pth'
+resnet101_url = 'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a1h-36d3f2aa.pth'
 
 # load model
-model = create_model('resnet34', pretrained=False)
-model.load_state_dict(torch.hub.load_state_dict_from_url(resnet34_url))
+# model = create_model('resnet18', pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(resnet18_url))
+
+# model = create_model('resnet34', pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(resnet34_url))
+
+model = create_model('resnet50', pretrained=False)
+model.load_state_dict(torch.hub.load_state_dict_from_url(resnet50_url))
+
+# model = create_model('resnet101', pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(resnet101_url))
+
+
+
+
 model = model.to(device)
 
 transform = transforms.Compose([
