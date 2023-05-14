@@ -909,7 +909,7 @@ def main():
             )
 
             train_loss = train_metrics['loss']  # obtain loss function values
-            threshold = 2.5
+            threshold = 2.8
 
             if train_loss <= threshold:
                 print(f"Loss ({train_loss}) exceeded the threshold ({threshold}). Early stopping...")
