@@ -17,13 +17,13 @@ test_dataset = datasets.ImageFolder(root=data_dir + '/val', transform=data_trans
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
 
 # load model
-model = resnet18(pretrained=False)
-model.load_state_dict(torch.hub.load_state_dict_from_url(
-    'https://download.pytorch.org/models/resnet18-5c106cde.pth'))
-
-# model = resnet34(pretrained=False)
+# model = resnet18(pretrained=False)
 # model.load_state_dict(torch.hub.load_state_dict_from_url(
-#     'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34-43635321.pth'))
+#     'https://download.pytorch.org/models/resnet18-5c106cde.pth'))
+
+model = resnet34(pretrained=False)
+model.load_state_dict(torch.hub.load_state_dict_from_url(
+    'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34-43635321.pth'))
 
 # model = resnet50(pretrained=False)
 # model.load_state_dict(torch.hub.load_state_dict_from_url(
