@@ -1,0 +1,196 @@
+05/14/2023 14:17:10 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 1, total 2, device cuda:1.
+05/14/2023 14:17:10 - INFO - train -   Training in distributed mode with multiple processes, 1 device per process.Process 0, total 2, device cuda:0.
+05/14/2023 14:17:13 - INFO - train -   Model resnet18 created, param count:37904976
+05/14/2023 14:17:24 - INFO - train -   Using native Torch AMP. Training in mixed precision.
+05/14/2023 14:17:24 - INFO - train -   Using native Torch DistributedDataParallel.
+05/14/2023 14:17:29 - INFO - train -   Scheduled epochs: 30. LR stepped per epoch.
+05/14/2023 14:17:35 - INFO - train -   Train: 0 [   0/105 (  0%)]  Loss: 8.292 (8.29)  Time: 6.120s,   41.83/s  (6.120s,   41.83/s)  LR: 5.500e-06  Data: 1.358 (1.358)
+05/14/2023 14:17:51 - INFO - train -   Train: 0 [  50/105 ( 48%)]  Loss: 8.010 (8.15)  Time: 0.305s,  839.83/s  (0.432s,  592.28/s)  LR: 5.500e-06  Data: 0.012 (0.039)
+05/14/2023 14:18:06 - INFO - train -   Train: 0 [ 100/105 ( 96%)]  Loss: 8.065 (8.12)  Time: 0.351s,  728.84/s  (0.365s,  701.36/s)  LR: 5.500e-06  Data: 0.012 (0.026)
+05/14/2023 14:18:07 - INFO - train -   Train: 0 [ 104/105 (100%)]  Loss: 7.867 (8.06)  Time: 0.254s, 1007.50/s  (0.361s,  709.12/s)  LR: 5.500e-06  Data: 0.000 (0.025)
+05/14/2023 14:18:07 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:18:09 - INFO - train -   Train: 1 [   0/105 (  0%)]  Loss: 8.310 (8.31)  Time: 0.970s,  263.99/s  (0.970s,  263.99/s)  LR: 5.504e-03  Data: 0.682 (0.682)
+05/14/2023 14:18:24 - INFO - train -   Train: 1 [  50/105 ( 48%)]  Loss: 5.599 (6.95)  Time: 0.294s,  871.60/s  (0.311s,  823.31/s)  LR: 5.504e-03  Data: 0.012 (0.025)
+05/14/2023 14:18:39 - INFO - train -   Train: 1 [ 100/105 ( 96%)]  Loss: 4.565 (6.16)  Time: 0.299s,  856.24/s  (0.304s,  841.73/s)  LR: 5.504e-03  Data: 0.011 (0.019)
+05/14/2023 14:18:40 - INFO - train -   Train: 1 [ 104/105 (100%)]  Loss: 4.762 (5.81)  Time: 0.291s,  880.92/s  (0.303s,  843.70/s)  LR: 5.504e-03  Data: 0.000 (0.018)
+05/14/2023 14:18:40 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:18:43 - INFO - train -   Train: 2 [   0/105 (  0%)]  Loss: 4.631 (4.63)  Time: 1.073s,  238.65/s  (1.073s,  238.65/s)  LR: 1.100e-02  Data: 0.772 (0.772)
+05/14/2023 14:18:58 - INFO - train -   Train: 2 [  50/105 ( 48%)]  Loss: 4.406 (4.52)  Time: 0.352s,  727.80/s  (0.316s,  809.55/s)  LR: 1.100e-02  Data: 0.011 (0.027)
+05/14/2023 14:19:12 - INFO - train -   Train: 2 [ 100/105 ( 96%)]  Loss: 4.292 (4.44)  Time: 0.353s,  724.98/s  (0.304s,  842.12/s)  LR: 1.100e-02  Data: 0.012 (0.020)
+05/14/2023 14:19:14 - INFO - train -   Train: 2 [ 104/105 (100%)]  Loss: 4.298 (4.41)  Time: 0.283s,  904.22/s  (0.304s,  841.70/s)  LR: 1.100e-02  Data: 0.000 (0.019)
+05/14/2023 14:19:14 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:19:17 - INFO - train -   Train: 3 [   0/105 (  0%)]  Loss: 4.247 (4.25)  Time: 1.057s,  242.19/s  (1.057s,  242.19/s)  LR: 1.650e-02  Data: 0.775 (0.775)
+05/14/2023 14:19:32 - INFO - train -   Train: 3 [  50/105 ( 48%)]  Loss: 4.160 (4.20)  Time: 0.263s,  973.80/s  (0.318s,  804.57/s)  LR: 1.650e-02  Data: 0.012 (0.027)
+05/14/2023 14:19:47 - INFO - train -   Train: 3 [ 100/105 ( 96%)]  Loss: 3.992 (4.13)  Time: 0.292s,  875.52/s  (0.307s,  834.60/s)  LR: 1.650e-02  Data: 0.013 (0.020)
+05/14/2023 14:19:48 - INFO - train -   Train: 3 [ 104/105 (100%)]  Loss: 4.012 (4.10)  Time: 0.288s,  889.33/s  (0.306s,  837.47/s)  LR: 1.650e-02  Data: 0.000 (0.019)
+05/14/2023 14:19:48 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:19:50 - INFO - train -   Train: 4 [   0/105 (  0%)]  Loss: 4.043 (4.04)  Time: 1.040s,  246.22/s  (1.040s,  246.22/s)  LR: 2.200e-02  Data: 0.745 (0.745)
+05/14/2023 14:20:06 - INFO - train -   Train: 4 [  50/105 ( 48%)]  Loss: 3.916 (3.98)  Time: 0.267s,  958.16/s  (0.320s,  800.73/s)  LR: 2.200e-02  Data: 0.011 (0.027)
+05/14/2023 14:20:21 - INFO - train -   Train: 4 [ 100/105 ( 96%)]  Loss: 3.829 (3.93)  Time: 0.297s,  860.70/s  (0.311s,  823.64/s)  LR: 2.200e-02  Data: 0.012 (0.020)
+05/14/2023 14:20:22 - INFO - train -   Train: 4 [ 104/105 (100%)]  Loss: 3.807 (3.90)  Time: 0.257s,  995.15/s  (0.310s,  826.07/s)  LR: 2.200e-02  Data: 0.000 (0.019)
+05/14/2023 14:20:22 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:20:25 - INFO - train -   Train: 5 [   0/105 (  0%)]  Loss: 3.871 (3.87)  Time: 1.105s,  231.57/s  (1.105s,  231.57/s)  LR: 2.566e-02  Data: 0.841 (0.841)
+05/14/2023 14:20:39 - INFO - train -   Train: 5 [  50/105 ( 48%)]  Loss: 3.760 (3.82)  Time: 0.274s,  933.16/s  (0.310s,  824.57/s)  LR: 2.566e-02  Data: 0.012 (0.028)
+05/14/2023 14:20:54 - INFO - train -   Train: 5 [ 100/105 ( 96%)]  Loss: 3.697 (3.78)  Time: 0.294s,  869.31/s  (0.306s,  837.87/s)  LR: 2.566e-02  Data: 0.012 (0.021)
+05/14/2023 14:20:56 - INFO - train -   Train: 5 [ 104/105 (100%)]  Loss: 3.780 (3.78)  Time: 0.347s,  737.91/s  (0.306s,  837.77/s)  LR: 2.566e-02  Data: 0.000 (0.020)
+05/14/2023 14:20:56 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:20:58 - INFO - train -   Train: 6 [   0/105 (  0%)]  Loss: 3.805 (3.81)  Time: 1.096s,  233.59/s  (1.096s,  233.59/s)  LR: 2.487e-02  Data: 0.802 (0.802)
+05/14/2023 14:21:13 - INFO - train -   Train: 6 [  50/105 ( 48%)]  Loss: 3.765 (3.78)  Time: 0.356s,  718.23/s  (0.304s,  841.48/s)  LR: 2.487e-02  Data: 0.013 (0.028)
+05/14/2023 14:21:28 - INFO - train -   Train: 6 [ 100/105 ( 96%)]  Loss: 3.676 (3.75)  Time: 0.291s,  878.23/s  (0.304s,  842.02/s)  LR: 2.487e-02  Data: 0.012 (0.020)
+05/14/2023 14:21:29 - INFO - train -   Train: 6 [ 104/105 (100%)]  Loss: 3.461 (3.68)  Time: 0.257s,  996.65/s  (0.304s,  840.80/s)  LR: 2.487e-02  Data: 0.000 (0.020)
+05/14/2023 14:21:29 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:21:32 - INFO - train -   Train: 7 [   0/105 (  0%)]  Loss: 3.590 (3.59)  Time: 1.073s,  238.48/s  (1.073s,  238.48/s)  LR: 2.397e-02  Data: 0.782 (0.782)
+05/14/2023 14:21:47 - INFO - train -   Train: 7 [  50/105 ( 48%)]  Loss: 3.560 (3.57)  Time: 0.307s,  834.80/s  (0.313s,  817.75/s)  LR: 2.397e-02  Data: 0.011 (0.027)
+05/14/2023 14:22:02 - INFO - train -   Train: 7 [ 100/105 ( 96%)]  Loss: 3.633 (3.59)  Time: 0.276s,  928.71/s  (0.303s,  844.23/s)  LR: 2.397e-02  Data: 0.012 (0.020)
+05/14/2023 14:22:03 - INFO - train -   Train: 7 [ 104/105 (100%)]  Loss: 3.520 (3.58)  Time: 0.254s, 1007.67/s  (0.302s,  846.65/s)  LR: 2.397e-02  Data: 0.000 (0.019)
+05/14/2023 14:22:03 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:22:06 - INFO - train -   Train: 8 [   0/105 (  0%)]  Loss: 3.488 (3.49)  Time: 1.106s,  231.56/s  (1.106s,  231.56/s)  LR: 2.295e-02  Data: 0.817 (0.817)
+05/14/2023 14:22:21 - INFO - train -   Train: 8 [  50/105 ( 48%)]  Loss: 3.492 (3.49)  Time: 0.355s,  720.79/s  (0.316s,  809.34/s)  LR: 2.295e-02  Data: 0.012 (0.028)
+05/14/2023 14:22:35 - INFO - train -   Train: 8 [ 100/105 ( 96%)]  Loss: 3.475 (3.49)  Time: 0.352s,  726.69/s  (0.307s,  833.53/s)  LR: 2.295e-02  Data: 0.012 (0.020)
+05/14/2023 14:22:37 - INFO - train -   Train: 8 [ 104/105 (100%)]  Loss: 3.365 (3.46)  Time: 0.291s,  878.49/s  (0.307s,  834.09/s)  LR: 2.295e-02  Data: 0.000 (0.020)
+05/14/2023 14:22:37 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:22:39 - INFO - train -   Train: 9 [   0/105 (  0%)]  Loss: 3.495 (3.50)  Time: 0.994s,  257.67/s  (0.994s,  257.67/s)  LR: 2.183e-02  Data: 0.730 (0.730)
+05/14/2023 14:22:54 - INFO - train -   Train: 9 [  50/105 ( 48%)]  Loss: 3.291 (3.39)  Time: 0.259s,  988.42/s  (0.307s,  834.28/s)  LR: 2.183e-02  Data: 0.015 (0.026)
+05/14/2023 14:23:08 - INFO - train -   Train: 9 [ 100/105 ( 96%)]  Loss: 3.448 (3.41)  Time: 0.300s,  853.61/s  (0.298s,  857.96/s)  LR: 2.183e-02  Data: 0.012 (0.019)
+05/14/2023 14:23:10 - INFO - train -   Train: 9 [ 104/105 (100%)]  Loss: 3.477 (3.43)  Time: 0.340s,  753.17/s  (0.300s,  854.67/s)  LR: 2.183e-02  Data: 0.000 (0.019)
+05/14/2023 14:23:10 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:23:12 - INFO - train -   Train: 10 [   0/105 (  0%)]  Loss: 3.251 (3.25)  Time: 1.050s,  243.84/s  (1.050s,  243.84/s)  LR: 2.063e-02  Data: 0.756 (0.756)
+05/14/2023 14:23:28 - INFO - train -   Train: 10 [  50/105 ( 48%)]  Loss: 3.227 (3.24)  Time: 0.269s,  952.14/s  (0.321s,  797.69/s)  LR: 2.063e-02  Data: 0.012 (0.027)
+05/14/2023 14:23:43 - INFO - train -   Train: 10 [ 100/105 ( 96%)]  Loss: 3.307 (3.26)  Time: 0.299s,  857.50/s  (0.310s,  825.85/s)  LR: 2.063e-02  Data: 0.012 (0.020)
+05/14/2023 14:23:44 - INFO - train -   Train: 10 [ 104/105 (100%)]  Loss: 3.245 (3.26)  Time: 0.258s,  993.41/s  (0.309s,  827.51/s)  LR: 2.063e-02  Data: 0.000 (0.019)
+05/14/2023 14:23:44 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:23:47 - INFO - train -   Train: 11 [   0/105 (  0%)]  Loss: 3.210 (3.21)  Time: 1.040s,  246.09/s  (1.040s,  246.09/s)  LR: 1.934e-02  Data: 0.772 (0.772)
+05/14/2023 14:24:01 - INFO - train -   Train: 11 [  50/105 ( 48%)]  Loss: 3.296 (3.25)  Time: 0.298s,  857.63/s  (0.307s,  833.81/s)  LR: 1.934e-02  Data: 0.012 (0.028)
+05/14/2023 14:24:16 - INFO - train -   Train: 11 [ 100/105 ( 96%)]  Loss: 3.280 (3.26)  Time: 0.293s,  874.99/s  (0.302s,  848.55/s)  LR: 1.934e-02  Data: 0.012 (0.020)
+05/14/2023 14:24:17 - INFO - train -   Train: 11 [ 104/105 (100%)]  Loss: 3.312 (3.27)  Time: 0.286s,  893.57/s  (0.301s,  849.75/s)  LR: 1.934e-02  Data: 0.000 (0.020)
+05/14/2023 14:24:17 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:24:20 - INFO - train -   Train: 12 [   0/105 (  0%)]  Loss: 3.212 (3.21)  Time: 1.175s,  217.82/s  (1.175s,  217.82/s)  LR: 1.800e-02  Data: 0.891 (0.891)
+05/14/2023 14:24:35 - INFO - train -   Train: 12 [  50/105 ( 48%)]  Loss: 3.367 (3.29)  Time: 0.268s,  955.64/s  (0.310s,  825.72/s)  LR: 1.800e-02  Data: 0.013 (0.030)
+05/14/2023 14:24:50 - INFO - train -   Train: 12 [ 100/105 ( 96%)]  Loss: 3.162 (3.25)  Time: 0.251s, 1019.82/s  (0.303s,  845.49/s)  LR: 1.800e-02  Data: 0.011 (0.021)
+05/14/2023 14:24:51 - INFO - train -   Train: 12 [ 104/105 (100%)]  Loss: 3.164 (3.23)  Time: 0.290s,  883.42/s  (0.303s,  845.56/s)  LR: 1.800e-02  Data: 0.000 (0.021)
+05/14/2023 14:24:51 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:24:54 - INFO - train -   Train: 13 [   0/105 (  0%)]  Loss: 3.190 (3.19)  Time: 1.181s,  216.75/s  (1.181s,  216.75/s)  LR: 1.661e-02  Data: 0.829 (0.829)
+05/14/2023 14:25:09 - INFO - train -   Train: 13 [  50/105 ( 48%)]  Loss: 3.269 (3.23)  Time: 0.353s,  724.78/s  (0.313s,  817.35/s)  LR: 1.661e-02  Data: 0.012 (0.028)
+05/14/2023 14:25:23 - INFO - train -   Train: 13 [ 100/105 ( 96%)]  Loss: 3.256 (3.24)  Time: 0.351s,  729.83/s  (0.305s,  839.28/s)  LR: 1.661e-02  Data: 0.013 (0.020)
+05/14/2023 14:25:25 - INFO - train -   Train: 13 [ 104/105 (100%)]  Loss: 3.313 (3.26)  Time: 0.286s,  894.56/s  (0.304s,  841.28/s)  LR: 1.661e-02  Data: 0.000 (0.020)
+05/14/2023 14:25:25 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:25:27 - INFO - train -   Train: 14 [   0/105 (  0%)]  Loss: 3.257 (3.26)  Time: 0.942s,  271.75/s  (0.942s,  271.75/s)  LR: 1.519e-02  Data: 0.671 (0.671)
+05/14/2023 14:25:42 - INFO - train -   Train: 14 [  50/105 ( 48%)]  Loss: 3.157 (3.21)  Time: 0.270s,  949.40/s  (0.309s,  828.29/s)  LR: 1.519e-02  Data: 0.013 (0.025)
+05/14/2023 14:25:57 - INFO - train -   Train: 14 [ 100/105 ( 96%)]  Loss: 3.382 (3.27)  Time: 0.285s,  898.97/s  (0.300s,  854.45/s)  LR: 1.519e-02  Data: 0.012 (0.019)
+05/14/2023 14:25:58 - INFO - train -   Train: 14 [ 104/105 (100%)]  Loss: 3.372 (3.29)  Time: 0.336s,  760.85/s  (0.300s,  854.49/s)  LR: 1.519e-02  Data: 0.000 (0.018)
+05/14/2023 14:25:58 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:26:01 - INFO - train -   Train: 15 [   0/105 (  0%)]  Loss: 3.182 (3.18)  Time: 1.037s,  246.79/s  (1.037s,  246.79/s)  LR: 1.375e-02  Data: 0.773 (0.773)
+05/14/2023 14:26:16 - INFO - train -   Train: 15 [  50/105 ( 48%)]  Loss: 3.167 (3.17)  Time: 0.295s,  868.20/s  (0.313s,  817.48/s)  LR: 1.375e-02  Data: 0.011 (0.027)
+05/14/2023 14:26:31 - INFO - train -   Train: 15 [ 100/105 ( 96%)]  Loss: 3.239 (3.20)  Time: 0.267s,  957.74/s  (0.308s,  831.94/s)  LR: 1.375e-02  Data: 0.012 (0.020)
+05/14/2023 14:26:32 - INFO - train -   Train: 15 [ 104/105 (100%)]  Loss: 3.182 (3.19)  Time: 0.290s,  882.72/s  (0.307s,  834.98/s)  LR: 1.375e-02  Data: 0.000 (0.019)
+05/14/2023 14:26:32 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:26:35 - INFO - train -   Train: 16 [   0/105 (  0%)]  Loss: 3.161 (3.16)  Time: 1.117s,  229.27/s  (1.117s,  229.27/s)  LR: 1.231e-02  Data: 0.769 (0.769)
+05/14/2023 14:26:49 - INFO - train -   Train: 16 [  50/105 ( 48%)]  Loss: 3.170 (3.17)  Time: 0.267s,  957.12/s  (0.309s,  829.16/s)  LR: 1.231e-02  Data: 0.014 (0.027)
+05/14/2023 14:27:04 - INFO - train -   Train: 16 [ 100/105 ( 96%)]  Loss: 3.125 (3.15)  Time: 0.268s,  955.24/s  (0.302s,  848.12/s)  LR: 1.231e-02  Data: 0.012 (0.020)
+05/14/2023 14:27:05 - INFO - train -   Train: 16 [ 104/105 (100%)]  Loss: 3.251 (3.18)  Time: 0.281s,  911.85/s  (0.302s,  847.45/s)  LR: 1.231e-02  Data: 0.000 (0.019)
+05/14/2023 14:27:05 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:27:08 - INFO - train -   Train: 17 [   0/105 (  0%)]  Loss: 3.188 (3.19)  Time: 1.127s,  227.20/s  (1.127s,  227.20/s)  LR: 1.089e-02  Data: 0.782 (0.782)
+05/14/2023 14:27:23 - INFO - train -   Train: 17 [  50/105 ( 48%)]  Loss: 2.983 (3.09)  Time: 0.295s,  868.14/s  (0.319s,  803.02/s)  LR: 1.089e-02  Data: 0.011 (0.028)
+05/14/2023 14:27:38 - INFO - train -   Train: 17 [ 100/105 ( 96%)]  Loss: 3.133 (3.10)  Time: 0.260s,  984.70/s  (0.309s,  827.94/s)  LR: 1.089e-02  Data: 0.012 (0.020)
+05/14/2023 14:27:39 - INFO - train -   Train: 17 [ 104/105 (100%)]  Loss: 3.259 (3.14)  Time: 0.253s, 1010.14/s  (0.308s,  830.37/s)  LR: 1.089e-02  Data: 0.000 (0.019)
+05/14/2023 14:27:39 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:27:42 - INFO - train -   Train: 18 [   0/105 (  0%)]  Loss: 3.241 (3.24)  Time: 1.121s,  228.36/s  (1.121s,  228.36/s)  LR: 9.501e-03  Data: 0.774 (0.774)
+05/14/2023 14:27:57 - INFO - train -   Train: 18 [  50/105 ( 48%)]  Loss: 3.081 (3.16)  Time: 0.291s,  879.51/s  (0.317s,  807.61/s)  LR: 9.501e-03  Data: 0.012 (0.027)
+05/14/2023 14:28:12 - INFO - train -   Train: 18 [ 100/105 ( 96%)]  Loss: 3.074 (3.13)  Time: 0.254s, 1008.46/s  (0.306s,  836.35/s)  LR: 9.501e-03  Data: 0.012 (0.020)
+05/14/2023 14:28:13 - INFO - train -   Train: 18 [ 104/105 (100%)]  Loss: 3.289 (3.17)  Time: 0.341s,  751.45/s  (0.305s,  838.05/s)  LR: 9.501e-03  Data: 0.000 (0.019)
+05/14/2023 14:28:13 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:28:16 - INFO - train -   Train: 19 [   0/105 (  0%)]  Loss: 3.117 (3.12)  Time: 1.081s,  236.84/s  (1.081s,  236.84/s)  LR: 8.157e-03  Data: 0.782 (0.782)
+05/14/2023 14:28:31 - INFO - train -   Train: 19 [  50/105 ( 48%)]  Loss: 3.158 (3.14)  Time: 0.301s,  850.80/s  (0.315s,  812.54/s)  LR: 8.157e-03  Data: 0.011 (0.027)
+05/14/2023 14:28:46 - INFO - train -   Train: 19 [ 100/105 ( 96%)]  Loss: 3.088 (3.12)  Time: 0.298s,  857.70/s  (0.309s,  828.12/s)  LR: 8.157e-03  Data: 0.012 (0.020)
+05/14/2023 14:28:47 - INFO - train -   Train: 19 [ 104/105 (100%)]  Loss: 3.162 (3.13)  Time: 0.249s, 1029.48/s  (0.308s,  830.51/s)  LR: 8.157e-03  Data: 0.000 (0.020)
+05/14/2023 14:28:47 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:28:50 - INFO - train -   Train: 20 [   0/105 (  0%)]  Loss: 3.076 (3.08)  Time: 1.064s,  240.65/s  (1.064s,  240.65/s)  LR: 6.875e-03  Data: 0.769 (0.769)
+05/14/2023 14:29:05 - INFO - train -   Train: 20 [  50/105 ( 48%)]  Loss: 3.073 (3.07)  Time: 0.299s,  857.41/s  (0.316s,  810.71/s)  LR: 6.875e-03  Data: 0.012 (0.027)
+05/14/2023 14:29:20 - INFO - train -   Train: 20 [ 100/105 ( 96%)]  Loss: 3.074 (3.07)  Time: 0.267s,  957.87/s  (0.309s,  829.11/s)  LR: 6.875e-03  Data: 0.012 (0.020)
+05/14/2023 14:29:21 - INFO - train -   Train: 20 [ 104/105 (100%)]  Loss: 3.044 (3.07)  Time: 0.263s,  972.38/s  (0.308s,  830.56/s)  LR: 6.875e-03  Data: 0.000 (0.019)
+05/14/2023 14:29:21 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:29:24 - INFO - train -   Train: 21 [   0/105 (  0%)]  Loss: 3.133 (3.13)  Time: 1.068s,  239.77/s  (1.068s,  239.77/s)  LR: 5.668e-03  Data: 0.780 (0.780)
+05/14/2023 14:29:39 - INFO - train -   Train: 21 [  50/105 ( 48%)]  Loss: 3.108 (3.12)  Time: 0.299s,  855.46/s  (0.311s,  823.07/s)  LR: 5.668e-03  Data: 0.012 (0.027)
+05/14/2023 14:29:53 - INFO - train -   Train: 21 [ 100/105 ( 96%)]  Loss: 3.054 (3.10)  Time: 0.261s,  979.62/s  (0.302s,  846.99/s)  LR: 5.668e-03  Data: 0.012 (0.020)
+05/14/2023 14:29:55 - INFO - train -   Train: 21 [ 104/105 (100%)]  Loss: 3.092 (3.10)  Time: 0.249s, 1028.05/s  (0.301s,  849.72/s)  LR: 5.668e-03  Data: 0.000 (0.020)
+05/14/2023 14:29:55 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:29:57 - INFO - train -   Train: 22 [   0/105 (  0%)]  Loss: 2.978 (2.98)  Time: 1.010s,  253.46/s  (1.010s,  253.46/s)  LR: 4.549e-03  Data: 0.754 (0.754)
+05/14/2023 14:30:12 - INFO - train -   Train: 22 [  50/105 ( 48%)]  Loss: 3.096 (3.04)  Time: 0.299s,  857.23/s  (0.316s,  810.59/s)  LR: 4.549e-03  Data: 0.015 (0.027)
+05/14/2023 14:30:27 - INFO - train -   Train: 22 [ 100/105 ( 96%)]  Loss: 3.097 (3.06)  Time: 0.302s,  846.71/s  (0.308s,  831.77/s)  LR: 4.549e-03  Data: 0.013 (0.020)
+05/14/2023 14:30:29 - INFO - train -   Train: 22 [ 104/105 (100%)]  Loss: 3.083 (3.06)  Time: 0.290s,  881.68/s  (0.307s,  833.29/s)  LR: 4.549e-03  Data: 0.000 (0.019)
+05/14/2023 14:30:29 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:30:31 - INFO - train -   Train: 23 [   0/105 (  0%)]  Loss: 3.159 (3.16)  Time: 1.077s,  237.79/s  (1.077s,  237.79/s)  LR: 3.532e-03  Data: 0.793 (0.793)
+05/14/2023 14:30:46 - INFO - train -   Train: 23 [  50/105 ( 48%)]  Loss: 3.076 (3.12)  Time: 0.250s, 1023.84/s  (0.317s,  806.38/s)  LR: 3.532e-03  Data: 0.012 (0.028)
+05/14/2023 14:31:01 - INFO - train -   Train: 23 [ 100/105 ( 96%)]  Loss: 3.005 (3.08)  Time: 0.266s,  960.68/s  (0.308s,  830.79/s)  LR: 3.532e-03  Data: 0.012 (0.021)
+05/14/2023 14:31:03 - INFO - train -   Train: 23 [ 104/105 (100%)]  Loss: 3.037 (3.07)  Time: 0.287s,  893.54/s  (0.307s,  833.65/s)  LR: 3.532e-03  Data: 0.000 (0.020)
+05/14/2023 14:31:03 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:31:05 - INFO - train -   Train: 24 [   0/105 (  0%)]  Loss: 3.171 (3.17)  Time: 0.991s,  258.25/s  (0.991s,  258.25/s)  LR: 2.626e-03  Data: 0.723 (0.723)
+05/14/2023 14:31:20 - INFO - train -   Train: 24 [  50/105 ( 48%)]  Loss: 3.023 (3.10)  Time: 0.296s,  864.89/s  (0.306s,  836.38/s)  LR: 2.626e-03  Data: 0.015 (0.026)
+05/14/2023 14:31:35 - INFO - train -   Train: 24 [ 100/105 ( 96%)]  Loss: 3.165 (3.12)  Time: 0.307s,  834.03/s  (0.301s,  851.04/s)  LR: 2.626e-03  Data: 0.015 (0.020)
+05/14/2023 14:31:36 - INFO - train -   Train: 24 [ 104/105 (100%)]  Loss: 3.027 (3.10)  Time: 0.287s,  892.89/s  (0.300s,  853.13/s)  LR: 2.626e-03  Data: 0.000 (0.019)
+05/14/2023 14:31:36 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:31:39 - INFO - train -   Train: 25 [   0/105 (  0%)]  Loss: 3.114 (3.11)  Time: 1.080s,  236.98/s  (1.080s,  236.98/s)  LR: 1.842e-03  Data: 0.793 (0.793)
+05/14/2023 14:31:54 - INFO - train -   Train: 25 [  50/105 ( 48%)]  Loss: 2.978 (3.05)  Time: 0.310s,  825.14/s  (0.312s,  821.23/s)  LR: 1.842e-03  Data: 0.017 (0.027)
+05/14/2023 14:32:08 - INFO - train -   Train: 25 [ 100/105 ( 96%)]  Loss: 3.053 (3.05)  Time: 0.303s,  843.56/s  (0.304s,  841.04/s)  LR: 1.842e-03  Data: 0.012 (0.020)
+05/14/2023 14:32:09 - INFO - train -   Train: 25 [ 104/105 (100%)]  Loss: 3.083 (3.06)  Time: 0.251s, 1020.54/s  (0.303s,  845.12/s)  LR: 1.842e-03  Data: 0.000 (0.020)
+05/14/2023 14:32:09 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:32:12 - INFO - train -   Train: 26 [   0/105 (  0%)]  Loss: 3.041 (3.04)  Time: 0.956s,  267.82/s  (0.956s,  267.82/s)  LR: 1.189e-03  Data: 0.728 (0.728)
+05/14/2023 14:32:27 - INFO - train -   Train: 26 [  50/105 ( 48%)]  Loss: 3.060 (3.05)  Time: 0.270s,  949.11/s  (0.313s,  818.54/s)  LR: 1.189e-03  Data: 0.012 (0.026)
+05/14/2023 14:32:42 - INFO - train -   Train: 26 [ 100/105 ( 96%)]  Loss: 3.215 (3.11)  Time: 0.353s,  725.86/s  (0.306s,  837.21/s)  LR: 1.189e-03  Data: 0.012 (0.019)
+05/14/2023 14:32:43 - INFO - train -   Train: 26 [ 104/105 (100%)]  Loss: 3.114 (3.11)  Time: 0.274s,  935.11/s  (0.305s,  838.63/s)  LR: 1.189e-03  Data: 0.000 (0.019)
+05/14/2023 14:32:43 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:32:46 - INFO - train -   Train: 27 [   0/105 (  0%)]  Loss: 3.081 (3.08)  Time: 0.966s,  265.06/s  (0.966s,  265.06/s)  LR: 6.730e-04  Data: 0.702 (0.702)
+05/14/2023 14:33:01 - INFO - train -   Train: 27 [  50/105 ( 48%)]  Loss: 3.190 (3.14)  Time: 0.352s,  727.82/s  (0.313s,  816.83/s)  LR: 6.730e-04  Data: 0.012 (0.026)
+05/14/2023 14:33:16 - INFO - train -   Train: 27 [ 100/105 ( 96%)]  Loss: 3.006 (3.09)  Time: 0.299s,  856.02/s  (0.304s,  841.50/s)  LR: 6.730e-04  Data: 0.012 (0.019)
+05/14/2023 14:33:17 - INFO - train -   Train: 27 [ 104/105 (100%)]  Loss: 3.108 (3.10)  Time: 0.279s,  919.05/s  (0.305s,  839.88/s)  LR: 6.730e-04  Data: 0.000 (0.019)
+05/14/2023 14:33:17 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:33:20 - INFO - train -   Train: 28 [   0/105 (  0%)]  Loss: 2.930 (2.93)  Time: 1.028s,  249.14/s  (1.028s,  249.14/s)  LR: 3.005e-04  Data: 0.771 (0.771)
+05/14/2023 14:33:35 - INFO - train -   Train: 28 [  50/105 ( 48%)]  Loss: 3.130 (3.03)  Time: 0.300s,  853.13/s  (0.316s,  809.53/s)  LR: 3.005e-04  Data: 0.012 (0.027)
+05/14/2023 14:33:50 - INFO - train -   Train: 28 [ 100/105 ( 96%)]  Loss: 3.078 (3.05)  Time: 0.285s,  896.68/s  (0.306s,  837.27/s)  LR: 3.005e-04  Data: 0.013 (0.020)
+05/14/2023 14:33:51 - INFO - train -   Train: 28 [ 104/105 (100%)]  Loss: 3.128 (3.07)  Time: 0.337s,  758.54/s  (0.306s,  837.25/s)  LR: 3.005e-04  Data: 0.000 (0.019)
+05/14/2023 14:33:51 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:33:54 - INFO - train -   Train: 29 [   0/105 (  0%)]  Loss: 3.110 (3.11)  Time: 1.118s,  228.88/s  (1.118s,  228.88/s)  LR: 7.532e-05  Data: 0.770 (0.770)
+05/14/2023 14:34:09 - INFO - train -   Train: 29 [  50/105 ( 48%)]  Loss: 3.065 (3.09)  Time: 0.300s,  853.16/s  (0.318s,  805.25/s)  LR: 7.532e-05  Data: 0.013 (0.027)
+05/14/2023 14:34:24 - INFO - train -   Train: 29 [ 100/105 ( 96%)]  Loss: 3.165 (3.11)  Time: 0.298s,  859.55/s  (0.306s,  836.78/s)  LR: 7.532e-05  Data: 0.012 (0.020)
+05/14/2023 14:34:25 - INFO - train -   Train: 29 [ 104/105 (100%)]  Loss: 3.082 (3.11)  Time: 0.287s,  893.41/s  (0.305s,  840.38/s)  LR: 7.532e-05  Data: 0.000 (0.019)
+05/14/2023 14:34:25 - INFO - train -   Distributing BatchNorm running means and vars
+05/14/2023 14:34:25 - INFO - train -   ------------- Evaluting stitch config 0/10 -------------
+05/14/2023 14:34:27 - INFO - train -   ------------- Evaluting stitch config 0/10 -------------
+05/14/2023 14:34:28 - INFO - train -   Test: [   0/39]  Time: 0.962 (0.962)  Loss:  0.9932 (0.9932)  Acc@1: 79.2969 (79.2969)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:30 - INFO - train -   Test: [  39/39]  Time: 0.062 (0.069)  Loss:  1.6543 (1.0028)  Acc@1: 56.2500 (78.7200)  Acc@5: 100.0000 (99.7900)
+05/14/2023 14:34:30 - INFO - train -   ------------- Evaluting stitch config 1/10 -------------
+05/14/2023 14:34:30 - INFO - train -   ------------- Evaluting stitch config 1/10 -------------
+05/14/2023 14:34:31 - INFO - train -   Test: [   0/39]  Time: 0.652 (0.652)  Loss:  0.7397 (0.7397)  Acc@1: 89.8438 (89.8438)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:33 - INFO - train -   Test: [  39/39]  Time: 0.333 (0.086)  Loss:  0.9375 (0.7167)  Acc@1: 75.0000 (90.9900)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:33 - INFO - train -   ------------- Evaluting stitch config 2/10 -------------
+05/14/2023 14:34:33 - INFO - train -   ------------- Evaluting stitch config 2/10 -------------
+05/14/2023 14:34:34 - INFO - train -   Test: [   0/39]  Time: 0.651 (0.651)  Loss:  0.9541 (0.9541)  Acc@1: 77.7344 (77.7344)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:37 - INFO - train -   Test: [  39/39]  Time: 0.012 (0.071)  Loss:  0.8887 (0.9408)  Acc@1: 81.2500 (78.6300)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:37 - INFO - train -   ------------- Evaluting stitch config 3/10 -------------
+05/14/2023 14:34:37 - INFO - train -   ------------- Evaluting stitch config 3/10 -------------
+05/14/2023 14:34:37 - INFO - train -   Test: [   0/39]  Time: 0.628 (0.628)  Loss:  0.8647 (0.8647)  Acc@1: 85.9375 (85.9375)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:39 - INFO - train -   ------------- Evaluting stitch config 4/10 -------------
+05/14/2023 14:34:39 - INFO - train -   Test: [  39/39]  Time: 0.012 (0.070)  Loss:  0.8242 (0.8546)  Acc@1: 87.5000 (84.9500)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:39 - INFO - train -   ------------- Evaluting stitch config 4/10 -------------
+05/14/2023 14:34:40 - INFO - train -   Test: [   0/39]  Time: 0.610 (0.610)  Loss:  1.1006 (1.1006)  Acc@1: 76.9531 (76.9531)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:42 - INFO - train -   ------------- Evaluting stitch config 5/10 -------------
+05/14/2023 14:34:42 - INFO - train -   Test: [  39/39]  Time: 0.012 (0.069)  Loss:  0.9985 (1.0423)  Acc@1: 81.2500 (79.4600)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:42 - INFO - train -   ------------- Evaluting stitch config 5/10 -------------
+05/14/2023 14:34:43 - INFO - train -   Test: [   0/39]  Time: 0.650 (0.650)  Loss:  1.1641 (1.1641)  Acc@1: 76.9531 (76.9531)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:45 - INFO - train -   Test: [  39/39]  Time: 0.011 (0.067)  Loss:  0.8633 (1.0836)  Acc@1: 93.7500 (80.7400)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:45 - INFO - train -   ------------- Evaluting stitch config 6/10 -------------
+05/14/2023 14:34:45 - INFO - train -   ------------- Evaluting stitch config 6/10 -------------
+05/14/2023 14:34:46 - INFO - train -   Test: [   0/39]  Time: 0.627 (0.627)  Loss:  1.0059 (1.0059)  Acc@1: 80.0781 (80.0781)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:48 - INFO - train -   ------------- Evaluting stitch config 7/10 -------------
+05/14/2023 14:34:48 - INFO - train -   Test: [  39/39]  Time: 0.010 (0.066)  Loss:  0.7642 (0.9718)  Acc@1: 87.5000 (81.7100)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:48 - INFO - train -   ------------- Evaluting stitch config 7/10 -------------
+05/14/2023 14:34:49 - INFO - train -   Test: [   0/39]  Time: 0.635 (0.635)  Loss:  0.9287 (0.9287)  Acc@1: 84.3750 (84.3750)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:51 - INFO - train -   ------------- Evaluting stitch config 8/10 -------------
+05/14/2023 14:34:51 - INFO - train -   Test: [  39/39]  Time: 0.010 (0.067)  Loss:  0.8252 (0.9065)  Acc@1: 87.5000 (85.1500)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:51 - INFO - train -   ------------- Evaluting stitch config 8/10 -------------
+05/14/2023 14:34:52 - INFO - train -   Test: [   0/39]  Time: 0.574 (0.574)  Loss:  1.0332 (1.0332)  Acc@1: 83.9844 (83.9844)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:54 - INFO - train -   ------------- Evaluting stitch config 9/10 -------------
+05/14/2023 14:34:54 - INFO - train -   Test: [  39/39]  Time: 0.009 (0.063)  Loss:  1.1660 (0.9794)  Acc@1: 87.5000 (86.0600)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:54 - INFO - train -   ------------- Evaluting stitch config 9/10 -------------
+05/14/2023 14:34:54 - INFO - train -   Test: [   0/39]  Time: 0.598 (0.598)  Loss:  0.8535 (0.8535)  Acc@1: 91.4062 (91.4062)  Acc@5: 100.0000 (100.0000)
+05/14/2023 14:34:56 - INFO - train -   Test: [  39/39]  Time: 0.008 (0.064)  Loss:  0.7529 (0.8114)  Acc@1: 93.7500 (92.4900)  Acc@5: 100.0000 (100.0000)
