@@ -74,7 +74,7 @@ plt.show()
 
 
 acc_18_flops=1830000000
-acc_18=80.83
+acc_18=70
 acc_34_flops=
 acc_34=
 acc_50_flops=
