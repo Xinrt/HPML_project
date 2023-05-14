@@ -1,6 +1,6 @@
 import torch
 from torchvision import transforms, datasets
-from torchvision.models import resnet18
+from torchvision.models import resnet18, resnet34, resnet50, resnet101
 
 # 数据集路径
 data_dir = '/scratch/xt2191/tiny-imagenet-200'
@@ -18,7 +18,22 @@ test_dataset = datasets.ImageFolder(root=data_dir + '/val', transform=data_trans
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=32, shuffle=False)
 
 # 加载ResNet-18模型
-model = resnet18(pretrained=True)
+model = resnet18(pretrained=False)
+model.load_state_dict(torch.hub.load_state_dict_from_url(
+    'https://download.pytorch.org/models/resnet18-5c106cde.pth'))
+
+# model = resnet34(pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(
+#     'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet34-43635321.pth'))
+
+# model = resnet50(pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(
+#     'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/resnet50d_ra2-464e36ba.pth'))
+
+# model = resnet101(pretrained=False)
+# model.load_state_dict(torch.hub.load_state_dict_from_url(
+#     'https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-rsb-weights/resnet101_a1h-36d3f2aa.pth'))
+
 model.eval()
 
 # GPU设备（如果可用）
