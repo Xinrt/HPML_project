@@ -73,15 +73,17 @@ plt.legend()
 plt.show()
 
 
-acc_18_flops=1830000000
-acc_18=70
-acc_34_flops=3680000000
-acc_34=83.99
-acc_50_flops=4140000000
-acc_50=88.26
-acc_101_flops=7880000000
-acc_101=
+# acc_18_flops=1830000000
+# acc_18=70
+# acc_34_flops=3680000000
+# acc_34=83.99
+# acc_50_flops=4140000000
+# acc_50=88.26
+# acc_101_flops=7880000000
+# acc_101=92.73
 
+
+plt.scatter([1830000000, 3680000000, 4140000000, 7880000000], [70, 83.99, 88.26, 92.73], color=['red', 'green', 'purple', 'orange'], alpha=0.6)
 
 # 将所有数据点连接成一条线
 all_flops = acc_18_34_flops + acc_34_50_flops + acc_50_101_flops
@@ -89,19 +91,8 @@ all_accuracy = acc_18_34 + acc_34_50 + acc_50_101
 
 sorted_points = sorted(zip(all_flops, all_accuracy))
 
-# 绘制散点图
-plt.scatter(all_flops, all_accuracy, alpha=0.6)
-
 # 连接点
 plt.plot(*zip(*sorted_points), color='blue')
-
-# 添加3个不同颜色的点
-colors = ['red', 'green', 'yellow']
-points = [(acc_18_flops, acc_18), (acc_34_flops, acc_34), (acc_50_flops, acc_50)]
-for i in range(3):
-    x, y = points[i]
-    color = colors[i]
-    plt.scatter(x, y, color=color)
 
 # 设置标签
 plt.xlabel('FLOPs')
@@ -110,4 +101,3 @@ plt.title('FLOPs vs Accuracy')
 
 # 显示图像
 plt.show()
-
